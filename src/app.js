@@ -1,11 +1,13 @@
 import React from 'react'
+import { Style } from 'radium'
 
 import Carousel from './carousel.js'
 import Frame from './frame.js'
 import Nav from './nav.js'
 import Slide from './slide.js'
 
-import configStyles from './config-styles.js'
+import styles from './app-styles.js'
+import stylesConfig from './config-styles.js'
 
 export default class DriftApp extends React.Component {
   constructor(props) {
@@ -40,10 +42,11 @@ export default class DriftApp extends React.Component {
   render() {
     return (
       <Frame>
+        <Style rules={styles} />
         <Carousel
           showIndex={this.state.showIndex}
           nav={this.renderNav()}
-          width={configStyles.imageWidth}
+          width={stylesConfig.imageWidth}
         >
           <Slide image={require('./images/1.jpg')} title="Imperial Mockery">
             In a show of defiance, rebels have again made mockery of the majesty

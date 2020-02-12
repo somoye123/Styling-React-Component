@@ -14,14 +14,10 @@ export default {
     left: 0,
     width: '100%',
     height: footerHeight,
-    padding: 15,
-    background: 'rgba(0,0,0,.3)',
+    padding: '15px',
+    background: 'rgba(0, 0, 0, .3)',
     color: '#fff',
-    textShadow: '1px 1px 0 rgba(0, 0, 0, .6)',
-    fontFamily: '"Helvetica Neue", Helvetica, Aria, sans-serif',
-    fontSize: 14,
-    lineHeight: '1.4em',
-    boxSizing: 'border-box'
+    textShadow: '1px 1px 0 rgba(0, 0, 0, .6)'
   },
   title: {
     margin: '0 0 10px 0'
